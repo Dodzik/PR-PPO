@@ -49,7 +49,7 @@ void wypiszCiag(int rozmiarCiagu,float * ciagArytmetyczny){
     }
     return max;
   }
-  int sumaCiagu(int rozmiarCiagu, float * ciagArytmetyczny){
+  float sumaCiagu(int rozmiarCiagu, float * ciagArytmetyczny){
     float suma=0;
     for(int i=0;i<rozmiarCiagu;i++){
       suma+=*(i+ciagArytmetyczny);

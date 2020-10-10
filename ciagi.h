@@ -3,7 +3,7 @@
 
   float* inicjalizujArytmetyczny(int rozmiarCiagu,float roznicaCiagu);
   void wypiszCiag(int rozmiarCiagu, float * ciagArytmetyczny);
-  int sumaCiagu(int rozmiarCiagu, float * ciagArytmetyczny);
+  float sumaCiagu(int rozmiarCiagu, float * ciagArytmetyczny);
   float *inicjalizujGeometyczny(int rozmiarCiagu, float ilorazCiagu); 
   void posprzatajCiag(float * ciagArytmetyczny);
   float minimumCiagu(int rozmiarCiagu, float * ciagGeometyczny);
