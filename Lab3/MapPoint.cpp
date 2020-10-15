@@ -1,4 +1,3 @@
-
 #include "MapPoint.h"
 
 
@@ -53,10 +52,10 @@ struct MapPoint inTheMiddle(struct MapPoint dummy, struct MapPoint dummy2,const 
     
     struct MapPoint output;
     output.name=(char*)malloc((strlen(name)+1)*sizeof(char));
-    for(int i=0;i<strlen(name);i++){
-        strcpy(output.name,(name+i));
+    
+        strcat(output.name,(name));
         // output.name=output.name+*(name+i);
-    }
+    
     output.lati=dummy.lati-dummy2.lati;
     output.longi=dummy.longi-dummy2.longi;
     return output;
