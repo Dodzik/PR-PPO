@@ -9,8 +9,6 @@ class Vector{
 
         Vector(int x,int y,int z);
 
-        int get(int x)const;
-       
         int &at(int x);
 
         int Dot(Vector dummy)const;
