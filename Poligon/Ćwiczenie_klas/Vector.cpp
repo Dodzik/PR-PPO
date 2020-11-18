@@ -15,9 +15,6 @@ void Vector::Print() const{
     std::cout<<"( "<<tab[0]<<" "<<tab[1]<< " "<<tab[2]<<" )\n";
 }
 
-int Vector::get(int x)const {
-    return tab[x];
-}
 int &Vector::at(int x){
     return tab[x];
 }
