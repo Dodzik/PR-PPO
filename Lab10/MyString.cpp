@@ -1,10 +1,8 @@
 #include "MyString.h"
 
 MyString::MyString(){
-    char *dummy=(char*)malloc(sizeof(char));
-    dummy[0]='\0';
-    wyraz=dummy;
-    std::cout<<"CTOR(cstr) = <>\n";
+    delete []wyraz;
+    std::cout<<"CTOR(def) = <>\n";
 }
 
 MyString::MyString(const char *x){
@@ -14,18 +12,15 @@ MyString::MyString(const char *x){
     std::cout<<"CTOR(cstr) = <"<<x<<">\n";
 }
 
-// MyString::MyString(char*x){
-    
-
-// }
 
 char* MyString::str()const{
-    return wyraz;
+    return (char*)this->wyraz;
 }
 
 MyString::~MyString(){
+    
     std::cout<<"DESTRUCTOR = <"<<wyraz<<">\n";
-    wyraz=nullptr;
+    delete []wyraz;
 }
 
 char* MyString::subStr(int x,int y)const{
