@@ -147,6 +147,6 @@ void zwolnij(MyNode* dummy){
     MyNode* wsk=dummy;
     if(wsk){
         zwolnij (wsk->next);
-        free(wsk);
+        delete wsk;
     }
 }
